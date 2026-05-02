@@ -1,0 +1,275 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    background: #f4f5f8;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #5f6b74;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav ul li a:hover {
+    color: #d23434;
+    border-bottom: 2px solid #d23434;
+}
+
+#slider {
+    padding: 0 20px;
+}
+
+#slider img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+#aside {
+    width: 220px;
+    float: left;
+    padding: 20px;
+}
+
+#aside h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #40484d;
+    border-bottom: 2px solid #e6e8eb;
+    padding-bottom: 8px;
+}
+
+#aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#aside ul li a {
+    display: block;
+    padding: 8px 0;
+    color: #5f6b74;
+    text-decoration: none;
+    border-bottom: 1px solid #ececec;
+}
+
+#content {
+    width: calc(100% - 260px);
+    float: right;
+    padding: 20px 0;
+}
+
+.mau_thiet_ke_moi,
+.noi_that_cao_cap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.san_pham,
+.sp_cao_cap {
+    width: calc(33.333% - 13.333px);
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.san_pham img,
+.sp_cao_cap img {
+    width: 100%;
+    display: block;
+}
+
+.san_pham h3,
+.sp_cao_cap h3 {
+    margin: 15px 15px 10px;
+    font-size: 16px;
+    color: #1f2a33;
+}
+
+.san_pham p,
+.sp_cao_cap p {
+    margin: 0 15px 15px;
+    color: #6e757b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.sp_cao_cap a {
+    display: inline-block;
+    margin: 0 15px 15px;
+    padding: 8px 18px;
+    background: #d23434;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact {
+    padding: 20px;
+    border-top: 1px solid #e6e8eb;
+    background: #f9fbfd;
+}
+
+#contact h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #1f2a33;
+}
+
+#contact p {
+    margin: 0 0 15px;
+    color: #5f6b74;
+}
+
+#contact form {
+    display: grid;
+    gap: 12px;
+}
+
+#contact label {
+    font-size: 14px;
+    color: #40484d;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8dde1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #d23434;
+}
+
+#contact button {
+    width: fit-content;
+    padding: 10px 22px;
+    border: none;
+    background: #d23434;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#contact button:hover {
+    background: #b2272c;
+}
+
+#footer {
+    clear: both;
+    padding: 20px;
+    background: #333637;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dia_chi {
+    max-width: 680px;
+    line-height: 1.7;
+}
+
+.icon {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.icon:first-of-type {
+    margin-left: auto;
+}
+
+.icon:last-of-type {
+    margin-right: 0;
+}
+
+.icon img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    #aside,
+    #content {
+        width: 100%;
+        float: none;
+    }
+
+    .san_pham,
+    .sp_cao_cap {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 640px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .san_pham,
+    .sp_cao_cap {
+        width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}

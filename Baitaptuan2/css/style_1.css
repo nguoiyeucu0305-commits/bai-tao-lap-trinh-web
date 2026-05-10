@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777777;
+}
+.navbar-light .navbar-nav .nav-link
+{
+    color: #272727;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: white !important;
+    background-color: #ff3c41;
+    font-weight: 700;
+    font-size: 12px;
+}
+.carousel .carousel-inner img
+{
+    width: 100%;
+    height: auto;
+}
+.title
+{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #1b1b1b;
+    letter-spacing: 2px;
+    padding: 60px 0 30px 0;
+}
+.about-img img
+{
+    width: 100%;
+    height: auto;
+}
+.about-content h3
+{
+    font-size: 26px;
+    font-weight: 700;
+    color: #3c3c3c;
+    margin-bottom: 20px;
+}
+.about-content .btn
+{
+    background: transparent;
+    border: 3px solid #76daff;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c3c3c;
+    padding: 10px 25px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.about-content .btn:hover
+{
+    background-color: #76daff;
+    color: white;
+}
+.line
+{
+    height: 1px;
+    background: #7f7f7f;
+    margin: 40px auto;
+}
+.about-icon
+{
+    font-size: 40px;
+    color: #76daff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about-service h4
+{
+    font-size: 20px;
+    color: #222222;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about-service p
+{
+    font-size: 15px;
+    color: #777777;
+}
+
+@media screen and (max-width:992px)
+{
+    .about-img , .about-content
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .navbar-light .navbar-brand img
+    {
+        width: 150px;
+    }
+    .about-img
+    {
+        display: none;
+    }
+    .about-icon
+    {
+        text-align: center;
+    }
+    .about-service
+    {
+        text-align: center;
+    }
+}
+

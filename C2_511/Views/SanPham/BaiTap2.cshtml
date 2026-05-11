@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model C2_511.Models.SanPhamViewModel
+
+<div style="border: 1px solid #ccc; padding: 20px; width: 300px;">
+    <h2>Thông tin sản phẩm</h2>
+
+    <img src="~/img/@Model.AnhMoTa" alt="Ảnh sản phẩm" style="width: 100%;" />
+
+    <p><strong>Tên sản phẩm:</strong> @Model.TenSP</p>
+    <p><strong>Giá bán:</strong> @Model.GiaBan.ToString("N0") VNĐ</p>
+</div>
+<h2>Thông tin sản phẩm</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <img src="~/images/@Model.AnhMoTa" alt="@Model.TenSP" style="width:100%; max-width:300px;" />
+        </div>
+        <div class="col-md-8">
+            <p><b>Tên sản phẩm:</b> @Model.TenSP</p>
+            <p><b>Giá bán:</b> <span class="text-danger">@Model.GiaBan.ToString("N0") VNĐ</span></p>
+        </div>
+    </div>
+</div>
